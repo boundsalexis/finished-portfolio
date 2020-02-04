@@ -46,22 +46,22 @@ app.get("*", function(req,res){
     res.render("index");
 })
 
-// app.get('/portfolio/:project', function(req, res){
-//     switch(req.params.project){
-//         case 1:
-//             res.render("project", project1);
-//             break;
-//         case 2:
-//             res.render("project", project2);
-//             break;
-//         case 3:
-//             res.render("project", project3);
-//             break;
-//         case 4:
-//             res.render("project", project4);
-//             break;
-//     }
-// })
+app.get('/portfolio/:project', function(req, res){
+    switch(req.params.project){
+        case 1:
+            res.render("project", project1);
+            break;
+        case 2:
+            res.render("project", project2);
+            break;
+        case 3:
+            res.render("project", project3);
+            break;
+        case 4:
+            res.render("project", project4);
+            break;
+    }
+})
 
 
 

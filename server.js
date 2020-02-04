@@ -23,7 +23,41 @@ app.use(express.static("public"));
 
 
 //include project objects
-
+const project1 = {
+name: "Election Year",
+technology: ["Node JS", "HTML", "Bootstrap"],
+repo: "link",
+description: "Get Real Detailed here"
+};
+const project2 = {
+name: "FitMe",
+technology: ["Node JS", "HTML"],
+repo: "link"
+};
+const project3 = {
+name: "Note Taker",
+technology: ["Node JS", "HTML"],
+repo: "link",
+description: "Get Real Detailed here"
+};
+const project4 = {
+name: "Weather Board",
+technology: ["Node JS", "HTML"],
+repo: "link",
+description: "Get Real Detailed here"
+};
+const project5= {
+name: "Team Manager",
+technology: ["Node JS", "HTML"],
+repo: "link",
+description: "Get Real Detailed here"
+};
+const project6 = {
+name: "Content Management",
+technology: ["Node JS", "HTML"],
+repo: "link",
+description: "Get Real Detailed here"
+};
 
 // var routes = require("./routes/html-routes.js")(app);
 
@@ -44,24 +78,31 @@ app.get('/portfolio', function(req,res){
 
 app.get("*", function(req,res){
     res.render("index");
-})
+});
 
-// app.get('/portfolio/:project', function(req, res){
-//     switch(req.params.project){
-//         case 1:
-//             res.render("project", project1);
-//             break;
-//         case 2:
-//             res.render("project", project2);
-//             break;
-//         case 3:
-//             res.render("project", project3);
-//             break;
-//         case 4:
-//             res.render("project", project4);
-//             break;
-//     }
-// })
+app.get('/portfolio/:project', function(req, res){
+    console.log(req.params.project);
+    switch(req.params.project){
+        case 'jesus':
+            res.render("project", project1);
+            break;
+        case '2':
+            res.render("project", project2);
+            break;
+        case '3':
+            res.render("project", project3);
+            break;
+        case '4':
+            res.render("project", project4);
+            break;
+        case '5':
+            res.render("project", project4);
+            break;
+        case '6':
+            res.render("project", project4);
+            break;   
+    }
+});
 
 
 

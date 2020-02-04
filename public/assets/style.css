@@ -1,0 +1,10 @@
+.container{
+    margin: 50px auto;
+    padding: 10px;
+}
+nav{
+    padding: 0 20px 0 20px;
+}
+#choice{
+    font-size: 20px;
+}

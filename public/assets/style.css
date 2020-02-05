@@ -4,7 +4,11 @@
 }
 nav{
     padding: 0 20px 0 20px;
+    background-color: #B81D38;
 }
 #choice{
     font-size: 20px;
+}
+body{
+    background-image: url("background.png");
 }

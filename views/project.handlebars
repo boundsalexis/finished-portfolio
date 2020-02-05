@@ -1,14 +1,20 @@
 <div class="row">
-    <div class="col s4">
-     <h1>Quick Facts</h1>
-     <h3>Built with:</h3>
-     <ul>
-         <li> hello its me</li>
-     </ul>
+    <div class="col s5">
+        <h1>Quick Facts</h1>
+        <h5>Built with</h5>
+        <p>{{technology}}</p>
+        <h5>Links</h5>
+        <ul>
+            {{#if deployed}}
+            <li><a href="{{live}}">Live Site</a></li>
+            {{/if}}
+            <li><a href="{{repo}}">Repository</a></li>
+        </ul>
     </div>
-    <div class="col s8">
+    {{!-- <div class="col s"></div> --}}
+    <div class="col s7">
         <h1>{{name}}</h1>
-        <img src="/assets/headshot.png" alt="hello" class="responsive-img">
+        <img src="{{img}}" alt ="app picture" height="400px" width="600px">
 
     </div>
 </div>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alexis Bounds Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -15,19 +16,32 @@
     <nav>
         <div class="nav-wrapper">
             <a href="/" class="brand-logo">Alexis Bounds | San Francisco, CA</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="material-icons">menu</i>
+            </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+
                 <li ><a  id="choice"href="/bio">Bio</a></li>
                 <li><a id="choice" href="/portfolio">Portfolio</a></li>
                 {{!-- <li><a href="collapsible.html">JavaScript</a></li> --}}
             </ul>
         </div>
     </nav>
+    <ul class="sidenav" id="mobile-nav">
+                <li ><a  id="choice"href="/bio">Bio</a></li>
+                <li><a id="choice" href="/portfolio">Portfolio</a></li>
+    </ul>
     <div class="container">
         {{{body}}}
     </div>
 
     </div>
-    {{!-- <script src="clientjs.js"></script> --}}
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    <script src="./assets/clientjs.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 

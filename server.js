@@ -51,12 +51,13 @@ description: "This app allows the user to create, edit, and delete notes. Anyone
 img:"/assets/notetaker.png"
 };
 const project4 = {
-name: "Weather Board",
-technology: [" Node JS ", " HTML ", " OpenWeather API ", "Local Storage"],
-deployed: false,
+name: "Cicky Game",
+technology: ["React ", "Handlebars ", " OpenWeather API ", "Local Storage"],
+deployed: true,
+live:"https://boundsalexis.github.io/clicky-game/",
 repo: "https://github.com/boundsalexis/Weather-Board",
-description: "This app allows users to search for cities all over the world, and get a detailed forcast for that day and a five day forecast. It also keeps track of the cities they have searched for, using local storage, to allow for quick access to previous searches. ",
-img:"/assets/weatherboard.png"
+description: "This is a memory game which utilizes React to track the state and keep the scores updating. Upon each click the clicked item is compared to an array holding all clicked items and if it is already in that array the user has lost. If the clicked item is not in the array it is added and the score is incremented.",
+img:"/assets/losing.gif"
 };
 const project5= {
 name: "Team Manager",

@@ -52,7 +52,7 @@ img:"/assets/notetaker.png"
 };
 const project4 = {
 name: "Cicky Game",
-technology: ["React ", "Handlebars ", " OpenWeather API ", "Local Storage"],
+technology: ["React ", "Handlebars ", " Bootstrap", " CSS", " JSX"],
 deployed: true,
 live:"https://boundsalexis.github.io/clicky-game/",
 repo: "https://github.com/boundsalexis/Weather-Board",
